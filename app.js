@@ -13,6 +13,13 @@
     function verificarChute(){
         let chute = document.querySelector ("input").value ;
 
+        if (chute < 1 || chute > 100) {
+        exibirTextoNaTela("p", "Por favor, digite um número entre 1 e 100.");
+        limparCampo();
+        return; // Sai da função se o valor estiver fora do intervalo
+    }
+
+
     if (chute == numeroSecreto) {
          exibirTextoNaTela ("h1" ,"Acertou!");
          let palavraTentativa =tentativas >1 ? "tentativas"  : "tentiva";
