@@ -45,7 +45,7 @@
             limparCampo();
             tentativas =1;
             exibirMensagemInicial();
-            document.getElementById("reiniciar").setAttribute("desabled",true);
+            document.getElementById("reiniciar").setAttribute("disabled",true);
 
         }
    
